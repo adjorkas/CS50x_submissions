@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------------------------
+sort1 uses: Bubble sort
+
+How do you know?:
+
+The time it takes gets really large if the amount of numbers involved gets larger, so it can't be merge sort:
+- random5k 0.096s
+- random10k 0.312s
+- random50k 9.912s
+
+As opposed to sort3, the time it takes to sort a sorted array vs. a reversed one is very different:
+- sorted50k--> 1.683 s
+- reversed50k --> 7.514 s (WORST)
+Indicating a different order of O and Omega; maybe O(n**2) and Omega(n), since it took less to go through the sorted array
+
+--------------------------------------------------------------------------------------------------------
+sort2 uses: Merge sort
+
+How do you know?:
+
+Firstly, it shows the smallest time difference when sorting small and big amounts of random numbers:
+- random5k 0.052s
+- random10k 0.059s
+- random50k 1.934s
+Which indicates big O and big Omega of n log(n).
+
+Then, it shows the best results when sorting both sorted and reversed arrays:
+- sorted50k--> 1.249 s (BEST)
+- reversed50k --> 2.212 s (BEST)
+Which indicates it works quickly in the hardest conditions, indicating a big O of n log(n).
+
+--------------------------------------------------------------------------------------------------------
+sort3 uses: Selection sort
+
+How do you know?:
+
+The time it takes gets really large if the amount of numbers involved gets larger, so it can't be merge sort:
+- random5k 0.064s
+- random10k 0.200s
+- random50k 4.777s
+
+It has the worst big Omega (n**2): it performs poorly with sorted arrays:
+- sorted50k--> 5.493 s (WORST)
+And the times of best and worse performance are almost the same, as shown in sorting reversed ("worst case scenario"):
+- reversed50k --> 5.467 s
+Which makes sense only for selection sort, that has a Theta of n**2.
