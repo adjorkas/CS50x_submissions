@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for element in data %}
+            <tr>
+                <td>{{ element.company_symbol }}</td>
+                <td>{{ element.company_symbol }}</td>
+                <td>{{ element.totalsum }}</td> <!--share number-->
+                <td>{{ usd(element.price) }}</td> <!--of single share-->
+                <td>{{ usd(element.totalsum * element.price) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><b>Cash: </b>{{ cash }}</p>
+    <p><b>TOTAL: </b>{{ total }}</p>
+{% endblock %}

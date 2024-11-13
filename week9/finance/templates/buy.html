@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post" onsubmit="return validateForm();">
+        <input type="text" name="symbol" placeholder="Symbol"><br>
+        <input type="number" name="shares" placeholder="Shares" min="1" id="requestedShareNo"><br><br>
+        <button type="submit">Buy</button>
+    </form>
+    <script>
+        function validateForm() {
+            let numberInput = document.getElementById("requestedShareNo");
+            let shareNo = parseInt(numberInput.value, 10)
+
+            if (isNaN(shareNo)) {
+                alert("Please enter a valid number.");
+                return false; // Prevent form from submitting
+            }
+
+            return true;
+        }
+    </script>
+
+{% endblock %}
