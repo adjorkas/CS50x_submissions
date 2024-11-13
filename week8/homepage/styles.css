@@ -1,0 +1,43 @@
+.fontfam {
+    font-family: "Lucida Console";
+    margin: 2px;
+    color: black;
+    background-color: white;
+    background-image: url('pattern.jpg')
+}
+
+#mucho_texto {
+    font-size: "";
+    font-family: "Times New Roman";
+    margin: 2px;
+    color: #15141f;
+    background-color: #fffff1;
+    background-image: url('pattern.jpg')
+}
+
+h6 {
+    font-size: "";
+    font-family: "Times New Roman";
+    margin: 2px;
+    color: #15141f;
+    background-color: #fffff1;
+
+}
+
+.intenso {
+    font-size: "";
+    font-family: "Times New Roman";
+    margin: 2px;
+    color: #15102e;
+    background-color: #bcaae3;
+
+}
+
+#randomcode {
+    font-size: "";
+    font-family: "Times New Roman";
+    margin: 2px;
+    color: #15141f;
+    background-color: #fffff1;
+    background-image: url('pattern.jpg')
+}

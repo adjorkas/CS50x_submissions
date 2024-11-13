@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="dna_icon.png">
+        <title>Lucía's Interests</title>
+    </head>
+
+    <body style="background-color: #e9eff2">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">LUCÍA CASTELLI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="interests.html">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="thesis.html">About my Thesis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h4>My interests, in no particular order, include:</h4>
+        <ol>
+            <li>My cat, Nuez. Why? Well...
+                <ul>
+                    <li>She's my baby girl</li>
+                    <li>She's kinda insane</li>
+                    <li>She's cute</li>
+                    <li>She's soft</li>
+                    <li>Her eyes are very round</li>
+                    <li>She meows really loudly</li>
+                    <li>She goes "mmmmmrrrrreeow" a lot</li>
+                </ul>
+            </li>
+            <li>Playing with my cat Nuez</li>
+            <li>Science (p fun)</li>
+            <li>CS50! Badass course</li>
+            <li>Food! Some of my favorite dishes include:
+                <ul>
+                    <li>My bf's Japanese style curry rice!</li>
+                    <li>YEAH THAT'S IT.</li>
+                </ul>
+            </li>
+            <li>Learning languages! I've delved into:
+                <ul>
+                    <li>German</li>
+                    <li>Swedish</li>
+                    <li>Japanese</li>
+                    <li>Korean</li>
+                    <li>Hungarian</li>
+                    <li>And more!!!</li>
+                </ul>
+            </li>
+            <li>Music! I've actually played violin for many years of my life :D</li>
+            <li>Art! I like drawing, always have</li>
+            <li>Reading! At the moment I'm reading the first book of "The Raven Cycle"</li>
+            <li>Dungeons and Dragons podcasts! They rule!</li>
+            <li>Videogames are fun hehe.</li>
+        </ol>
+        <h6>Do you agree with me?</h6>
+        <form>
+            <input type="radio" id="yay">yeah</input>
+            <br>
+            <input type="radio" id="nay">nahhhh</input>
+        </form>
+        <script>
+            document.getElementById('yay').addEventListener('click', function() {
+                alert('Yay! :D');
+            })
+            document.getElementById('nay').addEventListener('click', function() {
+                alert('Nay :(');
+            })
+        </script>
+    </body>
+
+</html>
